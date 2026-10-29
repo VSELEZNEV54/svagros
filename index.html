@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Свагросс — винтовые сваи с монтажом в Уфе и Башкирии</title>
+  <meta name="description" content="Завод винтовых свай в Уфе: лопастные сваи серии L и спиральные серии P, сваи под проект, доставка и монтаж по Башкирии. Демо-макет главной страницы.">
+  <meta name="theme-color" content="#121214">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Свагросс — винтовые сваи с монтажом в Уфе и Башкирии">
+  <meta property="og:description" content="Собственный завод в Уфе: сваи серий L и P, сваи под проект, доставка и монтаж.">
+  <meta property="og:image" content="assets/img/hero.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23121214'/%3E%3Ccircle cx='50' cy='50' r='35' fill='none' stroke='%23F15A23' stroke-width='9.4'/%3E%3Crect x='45.2' y='30.2' width='9.6' height='39.6' fill='%23F15A23'/%3E%3Crect x='50' y='45.2' width='32' height='9.6' fill='%23F15A23'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/img/hero.webp" imagesrcset="assets/img/hero-sm.webp 900w, assets/img/hero.webp 1536w" imagesizes="100vw" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <noscript><style>.preloader{display:none!important}body.is-loading{overflow:auto!important}.gauge{opacity:1!important}</style></noscript>
+</head>
+<body class="is-loading">
+
+<!-- ============ SVG SPRITE ============ -->
+<svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 20V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><path d="m20.5 11.5-8.4 8.4a5 5 0 0 1-7.1-7.1l8.8-8.8a3.4 3.4 0 0 1 4.8 4.8l-8.8 8.8a1.8 1.8 0 0 1-2.5-2.5l8-8" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.4 4-2 1.3a12 12 0 0 0 6.6 6.6l1.3-2 4 1.4v2.6a1.6 1.6 0 0 1-1.7 1.6A17 17 0 0 1 5 5.2a1.6 1.6 0 0 1 1.6-1.7Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="M9.8 15.2 9.5 19.3c.4 0 .6-.2.8-.4l2-1.9 4.1 3c.8.4 1.3.2 1.5-.7L20.6 5.6c.3-1.1-.4-1.6-1.2-1.3L3.7 10.4c-1.1.4-1.1 1-.2 1.3l4 1.3 9.3-5.9c.4-.3.8-.1.5.2Z" fill="currentColor"/></symbol>
+  <symbol id="i-max" viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L3.5 20.5l4.3-1.1A8.5 8.5 0 1 0 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.2 14.6V9.4l3.8 3.4 3.8-3.4v5.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-dots" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.6" fill="currentColor"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/><circle cx="19" cy="12" r="1.6" fill="currentColor"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3.5 6.5h17v11h-17zM3.5 7l8.5 6.5L20.5 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="logo-mark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44.1" fill="none" stroke="currentColor" stroke-width="11.8"/><rect x="43.96" y="25.12" width="12.08" height="49.76" fill="currentColor"/><rect x="50" y="43.96" width="40" height="12.08" fill="currentColor"/></symbol>
+</svg>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__inner">
+    <svg class="preloader__mark" viewBox="0 0 100 100">
+      <circle class="preloader__ring-bg" cx="50" cy="50" r="44.1"/>
+      <circle class="preloader__ring" cx="50" cy="50" r="44.1"/>
+      <g class="preloader__glyph">
+        <rect x="43.96" y="25.12" width="12.08" height="49.76"/>
+        <rect x="50" y="43.96" width="40" height="12.08"/>
+      </g>
+    </svg>
+    <div class="preloader__meta">
+      <span>погружение сваи</span>
+      <span class="preloader__value"><b id="preloaderDepth">0,00</b> м</span>
+    </div>
+    <div class="preloader__scale" aria-hidden="true"></div>
+  </div>
+</div>
+
+<!-- ============ DEPTH GAUGE (фирменный элемент) ============ -->
+<div class="gauge" id="gauge" aria-hidden="true">
+  <div class="gauge__tape"><div class="gauge__ticks" id="gaugeTicks"></div></div>
+  <div class="gauge__marker"></div>
+  <div class="gauge__readout">
+    <span class="gauge__label">глубина</span>
+    <span class="gauge__value"><span id="gaugeValue">−0,00</span>&nbsp;м</span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="hdr" data-theme="dark">
+  <div class="hdr__bar">
+    <a class="hdr__logo" href="#top" aria-label="Свагросс&nbsp;— на главную" data-scroll-to="#top">
+      <svg class="logo-full" viewBox="-1 103 2481 406" aria-hidden="true"><use href="#logo-full-path"/></svg>
+    </a>
+    <span class="hdr__tag">производство и&nbsp;монтаж<br>винтовых свай в&nbsp;Уфе</span>
+
+    <nav class="hdr__nav" aria-label="Основная навигация">
+      <div class="nav-item" data-mega="catalog">
+        <a class="nav-link" href="#" data-demo="Каталог" aria-haspopup="true" aria-expanded="false" aria-controls="mega-catalog">каталог</a>
+      </div>
+      <div class="nav-item" data-mega="solutions">
+        <a class="nav-link" href="#" data-demo="Решения" aria-haspopup="true" aria-expanded="false" aria-controls="mega-solutions">решения</a>
+      </div>
+      <a class="nav-link" href="#" data-demo="Производство">производство</a>
+      <a class="nav-link" href="#" data-demo="Монтаж">монтаж</a>
+      <a class="nav-link" href="#" data-demo="Проекты">проекты</a>
+      <a class="nav-link" href="#" data-demo="О компании">о компании</a>
+    </nav>
+
+    <a class="nav-link hdr__contacts" href="#" data-demo="Контакты">контакты</a>
+
+    <div class="hdr__actions">
+      <a class="sq-btn" href="https://t.me/svagross" target="_blank" rel="noopener" aria-label="Написать в Telegram"><svg><use href="#i-tg"/></svg></a>
+      <a class="sq-btn" href="https://max.ru/u/f9LHodD0cOJuNwO8rBFikVJGxoPr4U1EDxGnqBN8IZfjpFsFxmiIf0uEkww" target="_blank" rel="noopener" aria-label="Написать в MAX"><svg><use href="#i-max"/></svg></a>
+      <a class="sq-btn sq-btn--wide hdr__phone" href="tel:+73472997010" aria-label="Позвонить: 8 (347) 299-70-10"><svg><use href="#i-phone"/></svg><span>8 (347) 299-70-10</span></a>
+      <button class="btn btn--accent btn--sm hdr__cta" type="button" data-open-request><span class="btn__label" data-text="Получить расчёт">Получить расчёт</span></button>
+      <button class="sq-btn hdr__burger" type="button" aria-label="Открыть меню" aria-expanded="false" id="burger"><span></span><span></span></button>
+    </div>
+  </div>
+
+  <!-- Мега-меню: каталог -->
+  <div class="mega" id="mega-catalog" data-mega-panel="catalog">
+    <div class="mega__inner">
+      <div class="mega__col">
+        <p class="mega__eyebrow">каталог</p>
+        <a class="mega__link" href="#" data-demo="Сваи серии L" data-preview="assets/img/series-l.webp"><span class="mega__code">L</span><span><b>Сваи серии L</b><i>лопастные · Ø 76–133&nbsp;мм · 1,5–6&nbsp;м</i></span><svg><use href="#i-arrow-ur"/></svg></a>
+        <a class="mega__link" href="#" data-demo="Сваи серии P" data-preview="assets/img/series-p.webp"><span class="mega__code">P</span><span><b>Сваи серии P</b><i>спиральные · Ø 57–133&nbsp;мм · 1,5–6&nbsp;м</i></span><svg><use href="#i-arrow-ur"/></svg></a>
+        <a class="mega__link" href="#" data-demo="Сваи под проект" data-preview="assets/img/hero.webp"><span class="mega__code">∗</span><span><b>Сваи под проект</b><i>диаметр, длина и конфигурация под нагрузки</i></span><svg><use href="#i-arrow-ur"/></svg></a>
+      </div>
+      <div class="mega__col">
+        <p class="mega__eyebrow">услуги</p>
+        <a class="mega__link mega__link--plain" href="#" data-demo="Монтаж свай">Монтаж свай<svg><use href="#i-arrow-ur"/></svg></a>
+        <a class="mega__link mega__link--plain" href="#" data-demo="Доставка и комплектация">Доставка и комплектация<svg><use href="#i-arrow-ur"/></svg></a>
+        <a class="mega__link mega__link--plain" href="#" data-demo="Расчёт свайного поля">Расчёт свайного поля<svg><use href="#i-arrow-ur"/></svg></a>
+        <a class="mega__link mega__link--plain" href="#" data-demo="Партнёрам и застройщикам">Партнёрам и застройщикам<svg><use href="#i-arrow-ur"/></svg></a>
+      </div>
+      <div class="mega__preview">
+        <img src="assets/img/series-l.webp" alt="" loading="lazy" data-mega-img>
+        <p><b>30+ вариантов свай</b><br>подберём под ваш проект</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Мега-меню: решения -->
+  <div class="mega" id="mega-solutions" data-mega-panel="solutions">
+    <div class="mega__inner">
+      <div class="mega__col mega__col--wide">
+        <p class="mega__eyebrow">решения по типу объекта</p>
+        <div class="mega__grid">
+          <a class="mega__link mega__link--plain" href="#" data-demo="Каркасные и модульные дома" data-preview="assets/img/app-house.webp">Каркасные и модульные дома<svg><use href="#i-arrow-ur"/></svg></a>
+          <a class="mega__link mega__link--plain" href="#" data-demo="Пирсы и мостки" data-preview="assets/img/app-pier.webp">Пирсы и мостки<svg><use href="#i-arrow-ur"/></svg></a>
+          <a class="mega__link mega__link--plain" href="#" data-demo="Ограждения и ворота" data-preview="assets/img/app-fence.webp">Ограждения и ворота<svg><use href="#i-arrow-ur"/></svg></a>
+          <a class="mega__link mega__link--plain" href="#" data-demo="Теплицы и хозпостройки" data-preview="assets/img/app-greenhouse.webp">Теплицы и хозпостройки<svg><use href="#i-arrow-ur"/></svg></a>
+          <a class="mega__link mega__link--plain" href="#" data-demo="Террасы и веранды" data-preview="assets/img/app-terrace.webp">Террасы и веранды<svg><use href="#i-arrow-ur"/></svg></a>
+          <a class="mega__link mega__link--plain" href="#" data-demo="Коммерческие объекты" data-preview="assets/img/app-commercial.webp">Коммерческие объекты<svg><use href="#i-arrow-ur"/></svg></a>
+        </div>
+      </div>
+      <div class="mega__preview mega__preview--clay">
+        <img src="assets/img/app-house.webp" alt="" loading="lazy" data-mega-img>
+        <p><b>Типовые решения</b><br>и сваи под нестандартный проект</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Мобильное меню -->
+<div class="mnav" id="mnav" aria-hidden="true">
+  <div class="mnav__inner" data-lenis-prevent>
+    <nav class="mnav__list">
+      <a href="#" data-demo="Каталог">Каталог</a>
+      <a href="#" data-demo="Решения">Решения</a>
+      <a href="#" data-demo="Производство">Производство</a>
+      <a href="#" data-demo="Монтаж">Монтаж</a>
+      <a href="#" data-demo="Проекты">Проекты</a>
+      <a href="#" data-demo="О компании">О компании</a>
+      <a href="#" data-demo="Контакты">Контакты</a>
+    </nav>
+    <div class="mnav__foot">
+      <a class="mnav__phone" href="tel:+73472997010">8 (347) 299-70-10</a>
+      <a class="mnav__mail" href="mailto:info@svagross.ru">info@svagross.ru</a>
+      <button class="btn btn--accent" type="button" data-open-request><span class="btn__label" data-text="Получить расчёт">Получить расчёт</span></button>
+    </div>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><path id="logo-full-path" fill="currentColor" fill-rule="evenodd" d="M185.0 506.9C163.6 504.2 148.1 500.3 129.5 493.0C124.1 490.9 105.3 481.5 99.3 477.8C73.9 462.5 45.5 434.1 30.1 408.7C26.3 402.4 17.1 383.9 14.7 378.0C14.2 376.6 13.4 374.6 12.9 373.5C9.4 364.7 4.9 347.4 3.0 335.5C2.4 331.6 1.5 326.0 1.0 322.9C-0.3 315.7 -0.3 286.3 1.0 279.1C1.5 276.0 2.4 270.4 3.0 266.5C4.9 254.4 9.6 236.6 13.1 228.2C13.6 227.0 14.4 225.0 14.9 223.8C16.8 218.6 26.3 199.7 30.1 193.3C45.5 167.9 73.9 139.5 99.3 124.2C105.5 120.4 124.2 111.1 129.8 108.9C131.0 108.4 133.0 107.6 134.2 107.1C135.5 106.5 138.6 105.4 141.2 104.6C217.0 80.0 298.1 99.1 353.5 154.5C372.1 173.1 389.0 198.2 398.3 221.0C399.3 223.5 400.5 226.4 401.0 227.5C402.2 230.2 405.0 238.7 406.2 243.0C406.7 244.9 407.5 248.1 408.1 250.0C413.7 270.3 415.8 307.2 412.5 328.1C410.6 340.5 409.3 347.7 408.1 352.0C407.5 353.9 406.7 357.1 406.2 359.0C405.0 363.3 402.2 371.8 401.0 374.5C400.5 375.6 399.3 378.5 398.3 381.0C394.6 390.1 385.9 406.2 379.9 415.2C361.2 443.2 338.7 464.2 309.7 480.9C301.7 485.5 300.2 486.2 289.0 491.3C273.2 498.4 250.6 504.3 229.0 507.0C219.2 508.2 194.5 508.1 185.0 506.9ZM233.5 457.1C236.2 456.4 240.8 455.5 243.5 454.9C256.1 452.2 275.4 444.3 289.3 436.2C309.1 424.7 332.7 400.6 344.0 380.6C347.2 374.9 350.6 368.1 352.5 363.5C353.4 361.3 354.6 358.6 355.1 357.5C357.8 351.0 361.5 337.8 362.5 330.8L363.2 326.0L297.6 326.0L232.0 326.0L232.0 365.0L232.0 404.0L207.5 404.0L183.0 404.0L183.0 301.0L183.0 198.0L207.5 198.0L232.0 198.0L232.0 237.0L232.0 276.0L297.6 276.0L363.2 276.0L362.5 271.2C361.5 264.2 357.8 251.0 355.1 244.5C354.6 243.4 353.4 240.7 352.5 238.5C344.3 219.1 332.5 202.4 315.9 186.5C292.9 164.5 267.7 151.8 233.0 144.8C224.4 143.1 188.6 143.1 181.0 144.9C166.0 148.4 162.1 149.3 158.0 150.7C155.5 151.4 152.6 152.5 151.5 152.9C150.4 153.4 147.7 154.6 145.5 155.5C108.4 171.2 77.2 202.4 61.5 239.5C60.6 241.7 59.4 244.4 58.9 245.5C58.5 246.6 57.4 249.5 56.7 252.0C55.3 256.1 54.6 258.9 50.8 275.0C49.1 282.5 49.1 319.5 50.8 327.0C54.6 343.1 55.3 345.9 56.7 350.0C57.4 352.5 58.5 355.4 58.9 356.5C59.4 357.6 60.6 360.3 61.5 362.5C78.8 403.5 113.1 435.3 156.5 450.9C164.2 453.6 182.8 457.7 191.0 458.4C199.2 459.1 228.4 458.2 233.5 457.1ZM701.0 418.4C683.0 416.8 665.0 410.8 647.0 400.4C635.5 393.7 619.3 378.2 611.9 366.7C605.8 357.3 599.2 343.2 596.5 334.0C589.9 311.4 591.0 279.1 598.9 260.5C602.9 251.2 604.7 247.6 608.3 241.5C621.3 219.4 643.0 200.7 665.5 192.1C668.8 190.8 672.4 189.5 673.5 189.0C675.4 188.3 680.5 186.8 686.0 185.5C691.0 184.3 710.6 182.0 716.0 182.0C721.5 182.0 739.8 184.2 745.5 185.5C760.3 188.9 777.8 197.3 791.5 207.5C799.1 213.1 808.6 221.8 810.0 224.5C811.3 226.9 811.3 227.3 809.6 228.5C808.6 229.3 806.3 231.2 804.6 232.7C802.9 234.2 798.1 238.4 794.0 242.0C789.9 245.6 785.2 249.7 783.5 251.2C781.9 252.8 780.0 254.0 779.5 254.0C778.9 254.0 776.6 252.2 774.5 249.9C769.5 244.8 754.9 234.9 749.0 232.6C742.6 230.0 735.9 228.4 725.6 226.9C703.4 223.7 675.9 233.2 661.4 249.3C653.5 257.8 646.4 270.7 643.2 281.9C641.2 289.0 641.0 312.6 642.9 318.5C647.7 333.4 652.7 342.5 661.3 351.7C677.2 368.7 697.7 376.2 723.4 374.5C744.2 373.2 758.5 366.8 774.5 351.9C781.7 345.1 781.0 345.1 788.8 352.1C790.8 354.0 796.3 358.9 801.0 363.0C812.4 373.0 812.0 372.7 812.0 374.2C812.0 375.7 802.2 385.5 794.5 391.7C771.7 409.9 750.2 417.7 720.5 418.4C712.2 418.6 703.5 418.6 701.0 418.4ZM1845.5 418.0C1817.7 414.8 1792.5 402.7 1772.9 383.1C1757.5 367.6 1747.5 350.0 1741.9 328.3C1739.9 320.7 1739.6 317.0 1739.6 301.0C1739.6 285.0 1739.9 281.3 1741.9 273.7C1747.6 251.5 1757.5 234.4 1773.9 217.9C1786.9 204.9 1798.0 197.7 1814.5 191.3C1822.0 188.4 1824.8 187.6 1834.5 185.2C1844.9 182.6 1862.0 181.6 1874.4 182.9C1885.7 184.1 1888.2 184.5 1898.5 187.2C1926.6 194.5 1953.5 214.6 1968.5 239.5C1991.8 278.1 1991.8 324.0 1968.5 362.5C1963.5 370.8 1960.9 374.2 1953.6 381.9C1936.9 399.3 1915.0 411.2 1890.0 416.5C1881.2 418.3 1855.6 419.2 1845.5 418.0ZM2125.5 418.0C2096.9 414.7 2070.7 402.0 2051.8 382.2C2036.2 365.9 2026.9 348.2 2021.3 324.5C2018.9 314.6 2019.0 287.3 2021.3 277.2C2029.4 242.8 2048.9 216.0 2078.2 199.2C2114.1 178.5 2161.7 176.6 2198.0 194.4C2202.2 196.5 2208.3 200.1 2213.0 203.3C2223.7 210.5 2237.9 223.5 2238.0 226.0C2238.0 226.8 2233.9 231.1 2228.8 235.5C2223.8 239.9 2217.2 245.8 2214.2 248.5C2211.2 251.2 2208.4 253.6 2207.9 253.8C2207.5 254.0 2204.1 251.6 2200.5 248.5C2184.6 235.0 2172.3 229.4 2153.2 226.9C2133.2 224.3 2110.1 230.8 2094.9 243.3C2078.1 257.2 2068.0 279.0 2068.0 301.1C2068.0 331.8 2088.8 361.2 2117.5 370.8C2126.5 373.8 2131.4 374.5 2144.5 374.5C2168.7 374.4 2183.8 368.5 2201.4 352.0C2207.5 346.3 2209.4 345.1 2210.2 346.8C2210.3 347.2 2214.3 350.9 2219.0 355.0C2223.7 359.1 2229.1 363.9 2231.0 365.6C2232.9 367.4 2235.8 369.9 2237.5 371.4L2240.5 374.0L2231.2 383.0C2213.0 400.6 2192.8 411.7 2169.5 416.6C2161.2 418.3 2135.3 419.2 2125.5 418.0ZM2365.5 418.0C2337.7 414.8 2312.5 402.7 2292.9 383.1C2276.3 366.4 2265.8 346.8 2261.5 324.1C2259.5 314.1 2259.5 287.9 2261.5 277.9C2266.7 250.4 2281.7 226.3 2304.5 208.4C2311.3 203.1 2313.8 201.5 2323.5 196.0C2327.3 193.9 2341.2 188.6 2346.5 187.2C2356.7 184.5 2359.3 184.1 2370.8 182.9C2394.4 180.4 2424.0 186.0 2441.0 196.2C2442.9 197.3 2446.1 199.2 2448.0 200.2C2457.2 205.5 2478.0 223.4 2478.0 226.1C2478.0 226.7 2476.1 228.9 2473.8 230.9C2471.4 233.0 2464.6 239.1 2458.6 244.4C2452.7 249.7 2447.4 254.0 2447.0 254.0C2446.6 254.0 2445.6 253.3 2444.9 252.4C2443.3 250.4 2428.5 239.1 2425.1 237.2C2417.8 233.0 2415.9 232.2 2409.5 230.2C2405.7 229.1 2398.0 227.6 2392.5 226.9C2384.0 225.9 2381.1 226.0 2373.5 227.3C2359.7 229.8 2359.1 229.9 2349.4 234.6C2326.4 245.5 2312.5 265.0 2308.9 291.8C2305.7 314.8 2313.9 338.0 2330.9 354.3C2345.6 368.5 2361.7 374.5 2384.5 374.5C2400.4 374.4 2407.6 373.0 2419.0 367.7C2423.1 365.8 2434.8 358.5 2436.0 357.1C2436.3 356.8 2439.3 354.1 2442.8 351.2L2449.1 345.8L2453.3 349.6C2455.6 351.6 2461.5 357.0 2466.4 361.4C2471.3 365.9 2476.5 370.5 2477.9 371.8L2480.5 374.1L2471.5 382.8C2462.6 391.5 2445.7 403.7 2437.0 407.7C2430.3 410.8 2418.1 414.7 2409.8 416.5C2401.2 418.3 2375.5 419.2 2365.5 418.0ZM853.9 413.8C853.7 413.1 853.7 361.6 854.0 299.5L854.5 186.5L902.8 186.2C956.3 185.9 967.0 186.7 982.1 191.6C989.8 194.2 1001.2 200.8 1007.1 206.2C1013.7 212.1 1019.6 221.9 1022.6 231.9C1024.5 238.2 1024.4 254.3 1022.4 260.0C1017.5 274.2 1009.3 284.9 999.3 290.2C996.9 291.5 995.0 292.7 995.0 293.0C995.0 293.4 996.5 294.1 998.4 294.8C1008.4 298.4 1021.2 309.7 1027.5 320.6C1032.4 329.0 1033.5 332.0 1034.9 341.9C1037.2 357.4 1032.7 373.5 1022.2 387.3C1014.3 397.6 999.6 407.1 985.5 410.8C983.3 411.4 979.5 412.4 977.0 413.1C970.0 414.9 854.4 415.6 853.9 413.8ZM1058.0 413.1C1058.0 411.5 1059.0 408.5 1063.0 398.5C1063.4 397.4 1064.7 393.9 1065.9 390.8C1067.1 387.6 1068.9 382.4 1070.1 379.2C1071.3 376.1 1072.6 372.6 1073.0 371.5C1073.4 370.4 1074.8 366.8 1076.0 363.5C1077.2 360.2 1078.6 356.6 1079.0 355.5C1079.4 354.4 1080.7 351.0 1081.8 348.0C1082.9 345.0 1085.2 338.7 1087.0 334.0C1088.8 329.3 1091.1 323.0 1092.2 320.0C1093.3 317.0 1094.6 313.6 1095.0 312.5C1095.4 311.4 1096.7 308.0 1097.8 305.0C1098.9 302.0 1101.2 295.7 1103.0 291.0C1104.8 286.3 1107.1 280.0 1108.2 277.0C1109.3 274.0 1110.6 270.6 1111.0 269.5C1111.4 268.4 1112.8 264.8 1114.0 261.5C1115.2 258.2 1116.6 254.6 1117.0 253.5C1117.4 252.4 1118.7 248.9 1119.9 245.8C1121.1 242.6 1122.9 237.4 1124.1 234.2C1125.3 231.1 1126.6 227.6 1127.0 226.5C1127.4 225.4 1128.8 221.8 1130.0 218.5C1131.2 215.2 1132.6 211.6 1133.0 210.5C1133.4 209.4 1134.7 206.0 1135.8 203.0C1140.1 191.3 1141.2 188.5 1142.2 187.3C1143.3 185.9 1208.7 185.4 1210.6 186.8C1211.1 187.2 1212.2 189.1 1212.9 191.0C1213.6 192.9 1214.6 195.4 1215.0 196.5C1215.4 197.6 1216.8 201.2 1218.0 204.5C1219.2 207.8 1220.6 211.4 1221.0 212.5C1221.4 213.6 1222.7 217.1 1223.9 220.3C1225.1 223.4 1226.9 228.6 1228.1 231.8C1229.3 234.9 1230.6 238.4 1231.0 239.5C1231.4 240.6 1232.8 244.2 1234.0 247.5C1235.2 250.8 1236.6 254.4 1237.0 255.5C1237.4 256.6 1238.7 260.0 1239.8 263.0C1240.9 266.0 1243.2 272.3 1245.0 277.0C1246.8 281.7 1249.1 288.0 1250.2 291.0C1251.3 294.0 1252.6 297.4 1253.0 298.5C1253.4 299.6 1254.7 303.0 1255.8 306.0C1256.9 309.0 1259.2 315.3 1261.0 320.0C1262.8 324.7 1265.1 331.0 1266.2 334.0C1267.3 337.0 1268.6 340.4 1269.0 341.5C1269.4 342.6 1270.7 346.0 1271.8 349.0C1272.9 352.0 1275.2 358.3 1277.0 363.0C1278.8 367.7 1281.1 374.0 1282.2 377.0C1283.3 380.0 1284.6 383.4 1285.0 384.5C1285.4 385.6 1286.8 389.2 1288.0 392.5C1289.2 395.8 1290.6 399.4 1291.0 400.5C1291.5 401.6 1292.4 404.3 1293.1 406.5C1293.8 408.7 1294.8 411.1 1295.4 411.8C1297.5 414.6 1294.1 415.0 1270.5 414.8L1246.6 414.5L1244.9 409.5C1243.9 406.8 1241.7 400.7 1240.0 396.0C1238.3 391.3 1236.0 385.0 1235.0 382.0C1233.3 376.7 1232.0 373.2 1227.8 362.2L1225.8 357.0L1177.0 357.0C1139.2 357.0 1128.0 357.3 1127.2 358.2C1126.7 358.9 1125.5 361.5 1124.7 364.0C1123.8 366.5 1121.7 372.3 1120.0 377.0C1118.3 381.7 1116.2 387.5 1115.4 390.0C1114.6 392.5 1113.5 395.4 1113.0 396.5C1112.5 397.6 1111.1 401.4 1109.9 405.0C1106.2 416.1 1109.2 415.0 1082.0 415.0C1059.2 415.0 1058.0 414.9 1058.0 413.1ZM1333.7 414.4C1333.3 414.0 1333.0 362.7 1333.0 300.4L1333.0 187.0L1335.2 186.5C1336.5 186.2 1371.2 186.1 1412.5 186.2L1487.5 186.5L1487.8 208.2L1488.0 230.0L1436.8 230.1C1408.6 230.2 1384.8 230.3 1384.0 230.4C1382.7 230.5 1382.4 241.7 1382.0 322.5L1381.5 414.5L1357.9 414.8C1345.0 414.9 1334.1 414.7 1333.7 414.4ZM1531.7 414.4C1531.3 414.0 1531.0 362.7 1531.0 300.4C1531.0 198.1 1531.2 187.2 1532.6 186.6C1533.5 186.3 1555.6 186.0 1581.8 186.0C1641.2 186.1 1648.1 186.8 1665.8 195.1C1669.3 196.7 1674.7 199.8 1677.9 201.9C1684.1 206.2 1694.7 217.0 1697.0 221.6C1697.8 223.2 1699.2 225.6 1700.0 227.0C1704.2 233.4 1707.5 245.0 1708.5 256.5C1711.2 289.6 1694.9 317.5 1664.5 331.9C1650.2 338.7 1640.5 340.0 1606.1 340.0L1580.0 340.0L1579.8 377.2L1579.5 414.5L1555.9 414.8C1543.0 414.9 1532.1 414.7 1531.7 414.4ZM962.7 374.9C974.5 370.1 980.5 364.6 984.0 355.4C990.2 338.8 981.1 319.9 964.2 314.4C959.2 312.7 955.2 312.5 930.5 312.5L902.5 312.5L902.2 344.2L902.0 376.0L930.9 376.0C950.1 376.0 960.9 375.6 962.7 374.9ZM1881.3 372.9C1889.5 370.7 1901.7 364.9 1907.5 360.6C1917.6 352.9 1927.1 340.2 1931.7 328.0C1935.7 317.6 1936.5 312.7 1936.5 300.0C1936.4 285.7 1934.9 279.6 1927.7 265.1C1921.9 253.4 1910.8 242.0 1899.5 236.3C1883.4 228.0 1868.1 224.9 1854.2 227.0C1823.8 231.5 1800.9 249.8 1792.2 276.6C1786.1 295.4 1787.1 314.8 1795.2 332.8C1804.7 353.7 1827.2 370.7 1850.0 374.1C1856.9 375.1 1875.8 374.4 1881.3 372.9ZM1212.0 317.2C1212.0 316.4 1210.6 312.4 1206.0 300.0C1204.2 295.3 1202.5 290.4 1202.0 289.0C1201.5 287.6 1199.8 282.7 1198.0 278.0C1196.3 273.3 1194.2 267.5 1193.4 265.0C1192.6 262.5 1191.5 259.6 1191.1 258.5C1190.6 257.4 1189.7 254.9 1189.0 253.0C1188.3 251.1 1187.4 248.6 1187.0 247.5C1186.5 246.4 1185.1 242.6 1183.9 239.0C1181.3 231.1 1181.0 230.7 1176.5 230.4C1172.8 230.1 1171.8 231.2 1170.0 236.9C1169.5 238.3 1168.2 242.0 1167.1 245.0C1166.0 248.0 1163.7 254.3 1162.0 259.0C1160.3 263.7 1158.2 269.5 1157.4 272.0C1156.6 274.5 1155.5 277.4 1155.1 278.5C1154.6 279.6 1153.7 282.1 1153.0 284.0C1152.3 285.9 1151.4 288.4 1150.9 289.5C1150.5 290.6 1149.4 293.5 1148.6 296.0C1147.8 298.5 1145.8 304.3 1144.1 308.9C1142.4 313.5 1141.0 317.5 1141.0 317.7C1141.0 317.8 1157.0 318.0 1176.5 318.0C1196.0 318.0 1212.0 317.7 1212.0 317.2ZM1634.7 296.9C1642.7 293.6 1644.8 292.4 1649.0 288.4C1656.1 281.8 1660.0 272.7 1660.0 263.1C1659.9 249.4 1651.9 236.8 1639.3 230.8C1634.7 228.6 1633.4 228.5 1607.2 228.2L1580.0 227.9L1580.0 263.0L1580.0 298.0L1606.0 298.0C1623.1 298.0 1632.9 297.6 1634.7 296.9ZM961.3 275.5C964.3 274.2 968.1 271.5 969.8 269.6C979.3 258.8 976.8 238.0 965.1 230.7C958.0 226.3 955.7 226.0 928.2 226.0L902.0 226.0L902.0 252.0L902.0 278.0L929.0 278.0C955.5 278.0 956.0 278.0 961.3 275.5Z"/></defs></svg>
+
+<main id="main">
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="top" data-theme="dark">
+  <div class="hero__media" data-hero-media>
+    <img src="assets/img/hero.webp" srcset="assets/img/hero-sm.webp 900w, assets/img/hero.webp 1536w" sizes="100vw" alt="Винтовая свая Свагросс с цельным наконечником и лопастью" width="1536" height="864" fetchpriority="high">
+  </div>
+  <div class="hero__vignette"></div>
+
+  <div class="guides" aria-hidden="true">
+    <span class="guides__h" style="--y:62%"></span>
+    <span class="guides__v" style="--x:50%"></span>
+    <span class="cross" style="--x:50%;--y:62%"></span>
+    <span class="cross cross--sm" style="--x:16px;--y:62%"></span>
+  </div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow mono-cap" data-hero-fade><span class="dot"></span>собственное производство · Уфа</p>
+    <h1 class="hero__title" data-hero-title>
+      <span class="ln"><span>Винтовые сваи</span></span>
+      <span class="ln"><span>с&nbsp;монтажом в&nbsp;Уфе</span></span>
+      <span class="ln"><span>и&nbsp;Башкирии</span></span>
+    </h1>
+
+    <p class="hero__lead" data-hero-fade>Производим сваи под&nbsp;параметры проекта, комплектуем объект, доставляем и&nbsp;выполняем монтаж&nbsp;— от&nbsp;расчёта до&nbsp;готового основания.</p>
+
+    <div class="hero__bottom">
+      <div class="hero__left">
+        <div class="btn-pair" data-hero-fade>
+          <button class="btn btn--accent" type="button" data-open-request><span class="btn__label" data-text="Получить расчёт">Получить расчёт</span></button>
+          <a class="sq-btn sq-btn--light" href="#solutions" data-scroll-to="#solutions" aria-label="Смотреть решения"><svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <ul class="hero__stats">
+          <li data-hero-fade><b><span data-count="2.5" data-decimals="1">2,5</span><small>мин</small></b><span>время производства<br>одной сваи</span></li>
+          <li data-hero-fade><b><span data-count="30">30</span><small class="plus">+</small></b><span>вариантов свай<br>под ваш проект</span></li>
+          <li data-hero-fade><b><span data-count="24">24</span><small>часа</small></b><span>до начала<br>монтажных работ</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. РЕШЕНИЯ ============ -->
+<section class="sec solutions" id="solutions" data-theme="light">
+  <div class="crossrow" aria-hidden="true"><span></span><span></span><span></span></div>
+  <h2 class="h-split" data-split>
+    <span class="h-split__a">Свайное основание для&nbsp;дома,</span>
+    <span class="h-split__b">забора, пирса и&nbsp;склада</span>
+  </h2>
+
+  <div class="apps" data-stagger>
+    <article class="app-card" data-reveal>
+      <div class="app-card__media">
+        <img src="assets/img/app-house.webp" srcset="assets/img/app-house-sm.webp 600w, assets/img/app-house.webp 1024w" sizes="(max-width: 720px) 84vw, (max-width: 1180px) 50vw, 25vw" alt="Каркасный дом на винтовых сваях&nbsp;— разрез грунта" loading="lazy" width="1024" height="1024">
+        <span class="chip">дома</span>
+        <div class="app-card__spec">
+          <p class="mono-cap">обычно подбираем</p>
+          <dl><dt>серия</dt><dd>L&nbsp;— лопастные</dd><dt>диаметр</dt><dd>Ø 108–133&nbsp;мм</dd><dt>шаг</dt><dd>до 2,5&nbsp;м</dd></dl>
+          <p class="app-card__note">точный подбор&nbsp;— после расчёта нагрузок и&nbsp;оценки грунта</p>
+        </div>
+      </div>
+      <h3>Фундамент под&nbsp;каркасный или&nbsp;модульный дом?</h3>
+      <p>без котлована и&nbsp;бетона&nbsp;— стройку можно продолжать сразу после монтажа свай</p>
+      <div class="btn-pair btn-pair--fill">
+        <button class="btn btn--accent btn--sm" type="button" data-open-request="Каркасный или модульный дом"><span class="btn__label" data-text="Рассчитать стоимость">Рассчитать стоимость</span></button>
+        <button class="sq-btn sq-btn--muted" type="button" aria-label="Показать типовой подбор" aria-expanded="false" data-spec-toggle><svg><use href="#i-plus"/></svg></button>
+      </div>
+    </article>
+
+    <article class="app-card" data-reveal>
+      <div class="app-card__media">
+        <img src="assets/img/app-pier.webp" srcset="assets/img/app-pier-sm.webp 600w, assets/img/app-pier.webp 1024w" sizes="(max-width: 720px) 84vw, (max-width: 1180px) 50vw, 25vw" alt="Пирс на спиральных сваях&nbsp;— разрез с водой и грунтом" loading="lazy" width="1024" height="1024">
+        <span class="chip">у воды</span>
+        <div class="app-card__spec">
+          <p class="mono-cap">обычно подбираем</p>
+          <dl><dt>серия</dt><dd>P&nbsp;— спиральные</dd><dt>диаметр</dt><dd>Ø 89–133&nbsp;мм</dd><dt>шаг</dt><dd>до 2&nbsp;м</dd></dl>
+          <p class="app-card__note">точный подбор&nbsp;— после расчёта нагрузок и&nbsp;оценки грунта</p>
+        </div>
+      </div>
+      <h3>Строите пирс, мостки или&nbsp;платформу?</h3>
+      <p>спиральные сваи серии P&nbsp;— для&nbsp;конструкций у&nbsp;воды и&nbsp;оснований с&nbsp;повышенными требованиями</p>
+      <div class="btn-pair btn-pair--fill">
+        <button class="btn btn--accent btn--sm" type="button" data-open-request="Пирс или мостки"><span class="btn__label" data-text="Рассчитать стоимость">Рассчитать стоимость</span></button>
+        <button class="sq-btn sq-btn--muted" type="button" aria-label="Показать типовой подбор" aria-expanded="false" data-spec-toggle><svg><use href="#i-plus"/></svg></button>
+      </div>
+    </article>
+
+    <article class="app-card" data-reveal>
+      <div class="app-card__media">
+        <img src="assets/img/app-fence.webp" srcset="assets/img/app-fence-sm.webp 600w, assets/img/app-fence.webp 1024w" sizes="(max-width: 720px) 84vw, (max-width: 1180px) 50vw, 25vw" alt="Забор и ворота на винтовых сваях" loading="lazy" width="1024" height="1024">
+        <span class="chip">ограждения</span>
+        <div class="app-card__spec">
+          <p class="mono-cap">обычно подбираем</p>
+          <dl><dt>серия</dt><dd>L&nbsp;— лопастные</dd><dt>диаметр</dt><dd>Ø 76–89&nbsp;мм</dd><dt>шаг</dt><dd>до 2,5&nbsp;м</dd></dl>
+          <p class="app-card__note">точный подбор&nbsp;— после расчёта нагрузок и&nbsp;оценки грунта</p>
+        </div>
+      </div>
+      <h3>Забор или&nbsp;ворота на&nbsp;сложном грунте?</h3>
+      <p>основание для&nbsp;заборов, ворот и&nbsp;других линейных конструкций&nbsp;— без&nbsp;ленты и&nbsp;траншеи</p>
+      <div class="btn-pair btn-pair--fill">
+        <button class="btn btn--accent btn--sm" type="button" data-open-request="Забор или ворота"><span class="btn__label" data-text="Рассчитать стоимость">Рассчитать стоимость</span></button>
+        <button class="sq-btn sq-btn--muted" type="button" aria-label="Показать типовой подбор" aria-expanded="false" data-spec-toggle><svg><use href="#i-plus"/></svg></button>
+      </div>
+    </article>
+
+    <article class="app-card" data-reveal>
+      <div class="app-card__media">
+        <img src="assets/img/app-greenhouse.webp" srcset="assets/img/app-greenhouse-sm.webp 600w, assets/img/app-greenhouse.webp 1024w" sizes="(max-width: 720px) 84vw, (max-width: 1180px) 50vw, 25vw" alt="Теплица на винтовых сваях" loading="lazy" width="1024" height="1024">
+        <span class="chip">хозпостройки</span>
+        <div class="app-card__spec">
+          <p class="mono-cap">обычно подбираем</p>
+          <dl><dt>серия</dt><dd>L&nbsp;— лопастные</dd><dt>диаметр</dt><dd>Ø 76–89&nbsp;мм</dd><dt>шаг</dt><dd>до 2,5&nbsp;м</dd></dl>
+          <p class="app-card__note">точный подбор&nbsp;— после расчёта нагрузок и&nbsp;оценки грунта</p>
+        </div>
+      </div>
+      <h3>Теплица, баня или&nbsp;навес?</h3>
+      <p>лёгкое и&nbsp;ровное основание для&nbsp;хозяйственных конструкций без&nbsp;земляных работ</p>
+      <div class="btn-pair btn-pair--fill">
+        <button class="btn btn--accent btn--sm" type="button" data-open-request="Теплица или хозпостройка"><span class="btn__label" data-text="Рассчитать стоимость">Рассчитать стоимость</span></button>
+        <button class="sq-btn sq-btn--muted" type="button" aria-label="Показать типовой подбор" aria-expanded="false" data-spec-toggle><svg><use href="#i-plus"/></svg></button>
+      </div>
+    </article>
+
+    <article class="app-card" data-reveal>
+      <div class="app-card__media">
+        <img src="assets/img/app-terrace.webp" srcset="assets/img/app-terrace-sm.webp 600w, assets/img/app-terrace.webp 1024w" sizes="(max-width: 720px) 84vw, (max-width: 1180px) 50vw, 25vw" alt="Терраса на склоне на винтовых сваях разной высоты" loading="lazy" width="1024" height="1024">
+        <span class="chip">на склоне</span>
+        <div class="app-card__spec">
+          <p class="mono-cap">обычно подбираем</p>
+          <dl><dt>серия</dt><dd>L&nbsp;— лопастные</dd><dt>диаметр</dt><dd>Ø 89–108&nbsp;мм</dd><dt>шаг</dt><dd>до 2&nbsp;м</dd></dl>
+          <p class="app-card__note">точный подбор&nbsp;— после расчёта нагрузок и&nbsp;оценки грунта</p>
+        </div>
+      </div>
+      <h3>Терраса или&nbsp;веранда на&nbsp;перепаде высот?</h3>
+      <p>сваи выставляются в&nbsp;единый уровень&nbsp;— без&nbsp;подсыпки и&nbsp;подпорных стен</p>
+      <div class="btn-pair btn-pair--fill">
+        <button class="btn btn--accent btn--sm" type="button" data-open-request="Терраса или веранда"><span class="btn__label" data-text="Рассчитать стоимость">Рассчитать стоимость</span></button>
+        <button class="sq-btn sq-btn--muted" type="button" aria-label="Показать типовой подбор" aria-expanded="false" data-spec-toggle><svg><use href="#i-plus"/></svg></button>
+      </div>
+    </article>
+
+    <div class="apps__gap" aria-hidden="true"><span class="cross"></span></div>
+
+    <article class="app-card" data-reveal>
+      <div class="app-card__media">
+        <img src="assets/img/app-commercial.webp" srcset="assets/img/app-commercial-sm.webp 600w, assets/img/app-commercial.webp 1024w" sizes="(max-width: 720px) 84vw, (max-width: 1180px) 50vw, 25vw" alt="Коммерческий павильон на свайном поле" loading="lazy" width="1024" height="1024">
+        <span class="chip">бизнес</span>
+        <div class="app-card__spec">
+          <p class="mono-cap">обычно подбираем</p>
+          <dl><dt>серия</dt><dd>L или P</dd><dt>диаметр</dt><dd>Ø 108–133&nbsp;мм</dd><dt>шаг</dt><dd>по проекту</dd></dl>
+          <p class="app-card__note">свайное поле считаем по&nbsp;проекту объекта</p>
+        </div>
+      </div>
+      <h3>Склад, павильон или&nbsp;навес для&nbsp;бизнеса?</h3>
+      <p>серийные партии свай и&nbsp;монтаж свайного поля под&nbsp;нагрузки вашего проекта</p>
+      <div class="btn-pair btn-pair--fill">
+        <button class="btn btn--accent btn--sm" type="button" data-open-request="Коммерческий объект"><span class="btn__label" data-text="Рассчитать стоимость">Рассчитать стоимость</span></button>
+        <button class="sq-btn sq-btn--muted" type="button" aria-label="Показать типовой подбор" aria-expanded="false" data-spec-toggle><svg><use href="#i-plus"/></svg></button>
+      </div>
+    </article>
+
+    <article class="app-card app-card--accent" data-reveal>
+      <div class="app-card__stripes" aria-hidden="true"></div>
+      <h3>Проектируете или&nbsp;строите объекты?</h3>
+      <p>пришлём технические характеристики свай и&nbsp;расскажем об&nbsp;условиях для&nbsp;застройщиков и&nbsp;подрядчиков</p>
+      <div class="btn-pair btn-pair--fill">
+        <button class="btn btn--light btn--sm" type="button" data-open-request="Застройщик / подрядчик"><span class="btn__label" data-text="Запросить условия">Запросить условия</span></button>
+        <button class="sq-btn sq-btn--glass" type="button" aria-label="Подробнее" data-demo="Партнёрам"><svg><use href="#i-plus"/></svg></button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 3. ПОЧЕМУ СВАИ (x-ray) ============ -->
+<section class="why" id="why" data-theme="dark">
+  <div class="why__head">
+    <p class="mono-cap mono-cap--light">почему винтовые сваи</p>
+    <h2 class="h2 h2--light" data-split>Основание, которое не&nbsp;нужно ждать</h2>
+    <p class="why__lead">Свая вкручивается в&nbsp;грунт, лопасть уходит ниже глубины промерзания&nbsp;— длину подбираем по&nbsp;расчёту. Основание сразу готово к&nbsp;нагрузке: без&nbsp;котлована, опалубки и&nbsp;недель ожидания.</p>
+  </div>
+  <div class="why__media">
+    <img src="assets/img/xray-house.webp" srcset="assets/img/xray-house-sm.webp 900w, assets/img/xray-house.webp 1536w" sizes="100vw" alt="Дом на винтовых сваях в разрезе грунта&nbsp;— визуализация" loading="lazy" width="1536" height="864">
+  </div>
+  <div class="why__steps" data-why-steps>
+    <article class="why-step"><span class="why-step__n">01</span><h3>Без котлована и&nbsp;бетона</h3><p>сваи вкручиваются в&nbsp;грунт&nbsp;— не&nbsp;нужно рыть траншеи, вывозить землю и&nbsp;ждать, пока бетон наберёт прочность</p></article>
+    <article class="why-step"><span class="why-step__n">02</span><h3>Строить можно сразу</h3><p>основание готово принять нагрузку сразу после монтажа&nbsp;— без&nbsp;технологических пауз</p></article>
+    <article class="why-step"><span class="why-step__n">03</span><h3>Без сезонных пауз</h3><p>нет бетона, которому нужны тепло и&nbsp;время на&nbsp;набор прочности</p></article>
+    <article class="why-step"><span class="why-step__n">04</span><h3>На&nbsp;уклонах и&nbsp;перепадах</h3><p>сваи выставляются в&nbsp;единый уровень, а&nbsp;на&nbsp;слабых грунтах длину подбираем по&nbsp;расчёту</p></article>
+  </div>
+</section>
+
+<!-- ============ 4. УСТРОЙСТВО СВАИ (pinned) ============ -->
+<section class="sec pile" id="pile" data-theme="light">
+  <div class="crossrow" aria-hidden="true"><span></span><span></span><span></span></div>
+  <header class="pile__head">
+    <p class="mono-cap">производство</p>
+    <h2 class="h2" data-split>Меньше сварных швов&nbsp;— выше надёжность</h2>
+    <p class="lead-mix"><b>Наши сваи изготавливаются из&nbsp;новой цельной трубы.</b> Наконечник формируем из&nbsp;самой трубы&nbsp;— без&nbsp;приваривания отдельной детали.</p>
+  </header>
+
+  <div class="pile__stage" data-pile-stage>
+    <ol class="pile__steps" data-pile-steps>
+      <li class="is-active"><span class="mono-cap">01</span><h3>Новая цельная труба</h3><p>тело сваи&nbsp;— новая труба без&nbsp;стыков по&nbsp;длине</p></li>
+      <li><span class="mono-cap">02</span><h3>Лопасть или&nbsp;спираль</h3><p>серия L&nbsp;— с&nbsp;лопастью, серия P&nbsp;— со&nbsp;спиральной навивкой</p></li>
+      <li><span class="mono-cap">03</span><h3>Наконечник из&nbsp;тела трубы</h3><p>без отдельного сварного соединения наконечника&nbsp;— на&nbsp;один шов меньше</p></li>
+      <li><span class="mono-cap">04</span><h3>Автоматизированная линия</h3><p>серийное производство с&nbsp;контролем качества на&nbsp;всём цикле</p></li>
+    </ol>
+
+    <figure class="pile__drawing" data-pile-drawing>
+      <svg class="pile-svg" viewBox="0 0 600 1000" role="img" aria-label="Чертёж винтовой сваи серии L: труба, лопасть, наконечник">
+        <defs>
+          <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 9 5 0 9" fill="none" stroke="currentColor" stroke-width="1.2"/></marker>
+          <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="currentColor" stroke-width="1"/></pattern>
+        </defs>
+        <!-- ось -->
+        <line class="ps-axis" x1="300" y1="30" x2="300" y2="966"/>
+        <!-- наконечник (из тела трубы) -->
+        <path class="ps-part ps-tip" data-part="3" d="M252 640 C252 700 280 810 300 916 C320 810 348 700 348 640 Z"/>
+        <path class="ps-shade" d="M326 668 C328 730 316 812 303 886"/>
+        <!-- лопасть -->
+        <g class="ps-part ps-blade" data-part="2">
+          <path d="M140 650 L140 660 A160 34 0 0 0 460 660 L460 650 Z"/>
+          <ellipse cx="300" cy="650" rx="160" ry="34"/>
+        </g>
+        <!-- труба -->
+        <path class="ps-part ps-pipe" data-part="1" d="M252 110 L252 650 A48 10.2 0 0 0 348 650 L348 110 Z"/>
+        <path class="ps-shade" d="M322 140 V616 M334 150 V622"/>
+        <ellipse class="ps-part ps-top" data-part="1" cx="300" cy="110" rx="48" ry="11"/>
+        <ellipse class="ps-hole" data-part="4" cx="300" cy="172" rx="7" ry="9"/>
+        <!-- маркер "шва нет" -->
+        <ellipse class="ps-noseam" cx="300" cy="712" rx="50" ry="11"/>
+
+        <!-- размер L -->
+        <g class="ps-dim" data-dim>
+          <line class="ps-ext" x1="246" y1="110" x2="112" y2="110"/>
+          <line class="ps-ext" x1="292" y1="916" x2="112" y2="916"/>
+          <line class="ps-dim-line" x1="130" y1="116" x2="130" y2="910" marker-start="url(#arr)" marker-end="url(#arr)"/>
+          <text class="ps-dim-text" x="116" y="512" transform="rotate(-90 116 512)" text-anchor="middle">L = 1,5–6&nbsp;м</text>
+        </g>
+        <!-- размер Ø -->
+        <g class="ps-dim" data-dim>
+          <line class="ps-ext" x1="252" y1="100" x2="252" y2="52"/>
+          <line class="ps-ext" x1="348" y1="100" x2="348" y2="52"/>
+          <line class="ps-dim-line" x1="258" y1="62" x2="342" y2="62" marker-start="url(#arr)" marker-end="url(#arr)"/>
+          <text class="ps-dim-text" x="300" y="42" text-anchor="middle">Ø 76–133&nbsp;мм</text>
+        </g>
+        <!-- выноски -->
+        <g class="ps-call" data-call="1"><circle cx="348" cy="380" r="4.5"/><path d="M353 380 H478"/></g>
+        <g class="ps-call" data-call="2"><circle cx="460" cy="656" r="4.5"/><path d="M465 656 H520"/></g>
+        <g class="ps-call" data-call="3"><circle cx="300" cy="850" r="4.5"/><path d="M305 850 H478"/></g>
+        <g class="ps-call" data-call="4"><circle cx="300" cy="172" r="4.5"/><path d="M307 172 H478"/></g>
+      </svg>
+      <div class="pile__labels">
+        <span class="pile__label" data-label="1" style="--lx:80%;--ly:38%">цельная труба</span>
+        <span class="pile__label" data-label="2" style="--lx:86.8%;--ly:65.6%">лопасть</span>
+        <span class="pile__label" data-label="3" style="--lx:80%;--ly:85%">наконечник из&nbsp;трубы</span>
+        <span class="pile__label" data-label="4" style="--lx:80%;--ly:17.2%">2,5&nbsp;мин на&nbsp;сваю</span>
+      </div>
+    </figure>
+
+    <aside class="pile__aside">
+      <div class="pile__timer" data-pile-timer>
+        <p class="mono-cap">время производства одной сваи</p>
+        <p class="pile__clock"><span data-clock>00:00</span></p>
+        <div class="pile__bar"><span data-clock-bar></span></div>
+      </div>
+      <div class="pile__compare" data-pile-compare>
+        <p class="mono-cap">типовое решение</p>
+        <svg viewBox="0 0 220 120" class="mini-pile" aria-hidden="true">
+          <path class="mp-pipe" d="M10 46 H140 V74 H10 Z"/>
+          <path class="mp-tip" d="M146 46 L210 60 L146 74 Z"/>
+          <path class="mp-seam" d="M143 42 v36"/>
+          <path class="mp-zig" d="M139 44 l4 4 -4 4 4 4 -4 4 4 4 -4 4 4 4"/>
+          <text x="143" y="104" text-anchor="middle">сварной шов</text>
+        </svg>
+        <p>Наконечник&nbsp;— отдельная деталь на&nbsp;сварном шве: качество зависит от&nbsp;точности сварки.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ 5. КАТАЛОГ СЕРИЙ ============ -->
+<section class="sec catalog" id="catalog" data-theme="light">
+  <div class="catalog__head">
+    <h2 class="h2" data-split>Сваи под&nbsp;задачи вашего проекта</h2>
+    <div class="catalog__intro">
+      <p>Две серии для&nbsp;строительных и&nbsp;проектных решений&nbsp;— подберём диаметр, длину и&nbsp;конфигурацию под&nbsp;нагрузки и&nbsp;условия объекта.</p>
+      <a class="link-arrow" href="#" data-demo="Каталог">весь каталог <svg><use href="#i-arrow-ur"/></svg></a>
+    </div>
+  </div>
+
+  <div class="series" data-stagger>
+    <article class="series-card" data-reveal>
+      <div class="series-card__top">
+        <span class="series-card__code">L</span>
+        <div class="chips"><span class="chip chip--gray">лопастные</span><span class="chip chip--gray">Ø 76–133&nbsp;мм</span><span class="chip chip--gray">1,5–6&nbsp;м</span></div>
+      </div>
+      <div class="series-card__img"><img src="assets/img/series-l.webp" srcset="assets/img/series-l-sm.webp 900w, assets/img/series-l.webp 1536w" sizes="(max-width: 720px) 100vw, (max-width: 1180px) 50vw, 34vw" alt="Лопастная винтовая свая серии L" loading="lazy" width="1536" height="864"></div>
+      <h3>Сваи серии L</h3>
+      <p>лопастные сваи для&nbsp;несущих оснований строительных, каркасных и&nbsp;коммерческих объектов</p>
+      <p class="series-card__use"><span class="mono-cap">применение</span> дома · каркасные объекты · заборы · хоз- и&nbsp;коммерческие постройки</p>
+      <div class="btn-pair btn-pair--fill">
+        <button class="btn btn--accent btn--sm" type="button" data-open-request="Сваи серии L"><span class="btn__label" data-text="Получить расчёт">Получить расчёт</span></button>
+        <a class="sq-btn sq-btn--muted" href="#" data-demo="Сваи серии L" aria-label="Подробнее о серии L"><svg><use href="#i-arrow-ur"/></svg></a>
+      </div>
+    </article>
+
+    <article class="series-card" data-reveal>
+      <div class="series-card__top">
+        <span class="series-card__code">P</span>
+        <div class="chips"><span class="chip chip--gray">спиральные</span><span class="chip chip--gray">Ø 57–133&nbsp;мм</span><span class="chip chip--gray">1,5–6&nbsp;м</span></div>
+      </div>
+      <div class="series-card__img"><img src="assets/img/series-p.webp" srcset="assets/img/series-p-sm.webp 900w, assets/img/series-p.webp 1536w" sizes="(max-width: 720px) 100vw, (max-width: 1180px) 50vw, 34vw" alt="Спиральная винтовая свая серии P" loading="lazy" width="1536" height="864"></div>
+      <h3>Сваи серии P</h3>
+      <p>спиральные сваи для&nbsp;проектных оснований и&nbsp;конструкций с&nbsp;повышенными требованиями к&nbsp;устойчивости</p>
+      <p class="series-card__use"><span class="mono-cap">применение</span> пирсы · мостки · платформы · конструкции у&nbsp;воды</p>
+      <div class="btn-pair btn-pair--fill">
+        <button class="btn btn--accent btn--sm" type="button" data-open-request="Сваи серии P"><span class="btn__label" data-text="Получить расчёт">Получить расчёт</span></button>
+        <a class="sq-btn sq-btn--muted" href="#" data-demo="Сваи серии P" aria-label="Подробнее о серии P"><svg><use href="#i-arrow-ur"/></svg></a>
+      </div>
+    </article>
+
+    <article class="series-card series-card--accent" data-reveal>
+      <div class="series-card__stripes" aria-hidden="true"></div>
+      <div class="series-card__top">
+        <span class="series-card__code">∗</span>
+        <div class="chips"><span class="chip chip--glass">под проект</span></div>
+      </div>
+      <div class="series-card__spacer"></div>
+      <h3>Нестандартная задача?</h3>
+      <p>Адаптируем сваю под&nbsp;параметры проекта: подберём диаметр, длину и&nbsp;конфигурацию. Выпускаем и&nbsp;серийные партии, и&nbsp;решения под&nbsp;проект.</p>
+      <div class="btn-pair btn-pair--fill">
+        <button class="btn btn--light btn--sm" type="button" data-open-request="Сваи под проект"><span class="btn__label" data-text="Обсудить проект">Обсудить проект</span></button>
+        <a class="sq-btn sq-btn--glass" href="#" data-demo="Сваи под проект" aria-label="Подробнее"><svg><use href="#i-arrow-ur"/></svg></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 6. ФОТО-ПАУЗА ============ -->
+<section class="pause" data-theme="dark">
+  <div class="pause__media" data-pause-media>
+    <img src="assets/img/photo-pier.webp" srcset="assets/img/photo-pier-sm.webp 900w, assets/img/photo-pier.webp 1536w" sizes="100vw" alt="Пирс на винтовых сваях на рассвете" loading="lazy" width="1536" height="864">
+  </div>
+  <div class="pause__shade"></div>
+  <div class="pause__text">
+    <p class="mono-cap mono-cap--light">серия P · конструкции у воды</p>
+    <p class="pause__quote" data-scrub-words data-scrub-start="top 100%" data-scrub-end="top 68%">Основание без&nbsp;котлована: участок остаётся участком, а&nbsp;берег&nbsp;— берегом.</p>
+  </div>
+</section>
+
+<!-- ============ 7. СРАВНЕНИЕ ============ -->
+<section class="sec compare" id="compare" data-theme="light">
+  <div class="compare__head">
+    <h2 class="h2" data-split>Сравните с&nbsp;тем, что рассматриваете</h2>
+    <div class="compare__tabs-wrap">
+      <p class="compare__hint">выберите вариант&nbsp;— покажем, в&nbsp;чём разница</p>
+      <div class="tabs" role="tablist" data-tabs>
+        <button class="tab is-active" role="tab" aria-selected="true" data-tab="typical">типовая винтовая свая</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="strip">ленточный фундамент</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="bored">буронабивные сваи</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cmp">
+    <article class="cmp-card cmp-card--ours">
+      <div class="cmp-card__img"><img src="assets/img/series-l.webp" srcset="assets/img/series-l-sm.webp 900w, assets/img/series-l.webp 1536w" sizes="(max-width: 720px) 100vw, (max-width: 1180px) 50vw, 34vw" alt="Свая Свагросс" loading="lazy"></div>
+      <div class="cmp-card__body">
+        <h3>Свая Свагросс</h3>
+        <dl class="cmp-rows" data-cmp-ours></dl>
+      </div>
+    </article>
+    <article class="cmp-card">
+      <div class="cmp-card__img" data-cmp-img><img src="assets/img/cmp-typical.webp" alt="" loading="lazy"></div>
+      <div class="cmp-card__body">
+        <h3 data-cmp-title>Типовая винтовая свая</h3>
+        <dl class="cmp-rows" data-cmp-theirs></dl>
+      </div>
+    </article>
+  </div>
+  <p class="compare__note mono-cap">ориентировочное сравнение типовых решений · точные сроки и&nbsp;стоимость&nbsp;— после расчёта</p>
+</section>
+
+<!-- ============ 8. КАЛЬКУЛЯТОР ============ -->
+<section class="sec calc" id="calc" data-theme="light">
+  <div class="calc__stripes" aria-hidden="true"></div>
+  <div class="calc__card">
+    <div class="calc__controls">
+      <p class="mono-cap">предварительная оценка</p>
+      <h2 class="h2 h2--md" data-split>Сколько свай нужно вашему объекту?</h2>
+
+      <fieldset class="seg" data-calc-type>
+        <legend class="sr-only">Тип объекта</legend>
+        <label><input type="radio" name="ctype" value="house" checked><span>дом</span></label>
+        <label><input type="radio" name="ctype" value="bath"><span>баня / хозблок</span></label>
+        <label><input type="radio" name="ctype" value="deck"><span>терраса</span></label>
+        <label><input type="radio" name="ctype" value="fence"><span>забор</span></label>
+        <label><input type="radio" name="ctype" value="pier"><span>пирс</span></label>
+      </fieldset>
+
+      <div class="range" data-range="len">
+        <div class="range__top"><label for="rLen">длина</label><output id="oLen">10&nbsp;м</output></div>
+        <input type="range" id="rLen" min="3" max="20" step="0.5" value="10">
+      </div>
+      <div class="range" data-range="wid">
+        <div class="range__top"><label for="rWid">ширина</label><output id="oWid">8&nbsp;м</output></div>
+        <input type="range" id="rWid" min="3" max="15" step="0.5" value="8">
+      </div>
+    </div>
+
+    <div class="calc__viz">
+      <div class="plan" data-plan>
+        <svg class="plan__svg" viewBox="0 0 520 380" preserveAspectRatio="xMidYMid meet" aria-label="Схема свайного поля"></svg>
+      </div>
+      <div class="calc__result">
+        <div class="calc__num"><span class="calc__approx">≈</span><b data-calc-count>19</b><span data-calc-word>свай</span></div>
+        <p class="calc__meta" data-calc-meta>серия L · Ø 108&nbsp;мм · шаг до 2,5&nbsp;м</p>
+        <div class="btn-pair">
+          <button class="btn btn--accent" type="button" data-open-request data-calc-cta><span class="btn__label" data-text="Получить точный расчёт">Получить точный расчёт</span></button>
+          <button class="sq-btn sq-btn--muted" type="button" data-open-request aria-label="Прикрепить чертёж"><svg><use href="#i-clip"/></svg></button>
+        </div>
+        <p class="calc__note" data-calc-note>Оценка по&nbsp;типовой схеме: периметр и&nbsp;несущие линии. Количество и&nbsp;типоразмер уточним по&nbsp;нагрузкам и&nbsp;грунту.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. 5 ШАГОВ (dial) ============ -->
+<section class="steps" id="steps" data-theme="light">
+  <div class="steps__pin" data-steps-pin>
+    <div class="steps__center">
+      <h2 class="h2" data-split>От заявки до&nbsp;готового основания&nbsp;— 5&nbsp;шагов</h2>
+      <div class="btn-pair btn-pair--center">
+        <button class="btn btn--accent" type="button" data-open-request><span class="btn__label" data-text="Отправить параметры">Отправить параметры</span></button>
+        <button class="sq-btn" type="button" data-open-request aria-label="Прикрепить чертёж"><svg><use href="#i-clip"/></svg></button>
+      </div>
+    </div>
+    <div class="dial" data-dial>
+      <svg class="dial__ticks" viewBox="0 0 1000 1000" aria-hidden="true">
+        <circle class="dial__minor" cx="500" cy="500" r="490"/>
+        <circle class="dial__major" cx="500" cy="500" r="486"/>
+      </svg>
+      <div class="dial__labels" data-dial-labels></div>
+      <div class="dial__cards" data-dial-cards>
+        <article class="step-card" data-step="0"><span class="mono-cap">01</span><h3>Заявка</h3><p>присылаете параметры объекта или&nbsp;чертёж&nbsp;— или&nbsp;просто описываете задачу</p></article>
+        <article class="step-card" data-step="1"><span class="mono-cap">02</span><h3>Подбор и&nbsp;расчёт</h3><p>подбираем серию, диаметр и&nbsp;длину свай, считаем стоимость и&nbsp;сроки</p></article>
+        <article class="step-card" data-step="2"><span class="mono-cap">03</span><h3>Производство</h3><p>изготавливаем сваи на&nbsp;своём заводе в&nbsp;Уфе&nbsp;— 2,5&nbsp;минуты на&nbsp;одну сваю</p></article>
+        <article class="step-card" data-step="3"><span class="mono-cap">04</span><h3>Доставка</h3><p>комплектуем объект и&nbsp;привозим сваи на&nbsp;участок</p></article>
+        <article class="step-card" data-step="4"><span class="mono-cap">05</span><h3>Монтаж</h3><p>выполняем монтаж; до&nbsp;начала работ&nbsp;— 24&nbsp;часа</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. ЗАВОД + ФОРМАТЫ ============ -->
+<section class="factory" id="factory" data-theme="dark">
+  <div class="factory__top">
+    <div class="factory__photo" data-parallax-inner>
+      <img src="assets/img/photo-factory.webp" srcset="assets/img/photo-factory-sm.webp 640w, assets/img/photo-factory.webp 1024w" sizes="(max-width: 860px) 100vw, 42vw" alt="Автоматизированная линия обработки трубы" loading="lazy" width="1024" height="1536">
+    </div>
+    <div class="factory__text">
+      <p class="mono-cap mono-cap--light">о производстве</p>
+      <h2 class="h2 h2--light" data-split>Первый технологичный завод свай в&nbsp;Башкирии</h2>
+      <p class="lead-mix lead-mix--dark"><b>Изготавливаем винтовые сваи двух серий&nbsp;— лопастные L и&nbsp;спиральные P&nbsp;— на&nbsp;собственном производстве в&nbsp;Уфе.</b> Выпускаем серийные партии и&nbsp;решения под&nbsp;параметры проекта, контролируя качество на&nbsp;всём производственном цикле.</p>
+      <ul class="stats">
+        <li><b><span data-count="2.5" data-decimals="1">2,5</span><small>мин</small></b><span>на производство одной сваи</span></li>
+        <li><b><span data-count="30">30</span>+</b><span>вариантов свай под&nbsp;проект</span></li>
+        <li><b><span data-count="24">24</span><small>часа</small></b><span>до&nbsp;начала монтажных работ</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="formats">
+    <div class="formats__photo" data-parallax="0.12">
+      <img src="assets/img/photo-install.webp" srcset="assets/img/photo-install-sm.webp 900w, assets/img/photo-install.webp 1536w" sizes="(max-width: 1180px) 100vw, 50vw" alt="Монтаж винтовой сваи на участке" loading="lazy" width="1536" height="864">
+    </div>
+    <div class="formats__body">
+      <h2 class="h2 h2--light" data-split>Берём на&nbsp;себя весь комплекс работ</h2>
+      <p class="formats__lead">от&nbsp;подбора решения и&nbsp;производства до&nbsp;поставки и&nbsp;монтажа на&nbsp;объекте&nbsp;— выберите удобный формат</p>
+      <div class="formats__grid">
+        <span class="cross" style="--x:0%;--y:0%"></span><span class="cross" style="--x:33.333%;--y:0%"></span><span class="cross" style="--x:66.666%;--y:0%"></span><span class="cross" style="--x:100%;--y:0%"></span>
+        <span class="cross" style="--x:0%;--y:100%"></span><span class="cross" style="--x:33.333%;--y:100%"></span><span class="cross" style="--x:66.666%;--y:100%"></span><span class="cross" style="--x:100%;--y:100%"></span>
+        <article class="format"><span class="mono-cap">01</span><h3>Под ключ</h3><p>подбор, производство, доставка и&nbsp;монтаж&nbsp;— один подрядчик и&nbsp;одна ответственность</p></article>
+        <article class="format"><span class="mono-cap">02</span><h3>Поставка с&nbsp;завода</h3><p>серийные партии свай для&nbsp;строительных компаний и&nbsp;частных заказчиков</p></article>
+        <article class="format"><span class="mono-cap">03</span><h3>Под&nbsp;проект</h3><p>изготовим сваи под&nbsp;параметры проекта: диаметр, длину и&nbsp;конфигурацию</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. MARQUEE ============ -->
+<div class="marquee" data-theme="light" aria-hidden="true">
+  <div class="marquee__track" data-marquee>
+    <span>винтовые сваи</span><i></i><span>лопастные · серия L</span><i></i><span>спиральные · серия P</span><i></i><span>сваи под проект</span><i></i><span>доставка</span><i></i><span>монтаж</span><i></i><span>Уфа и Башкирия</span><i></i>
+  </div>
+</div>
+
+<!-- ============ 12. FAQ ============ -->
+<section class="sec faq" id="faq" data-theme="light">
+  <div class="faq__grid">
+    <div class="faq__photo">
+      <img src="assets/img/photo-worker.webp" srcset="assets/img/photo-worker-sm.webp 640w, assets/img/photo-worker.webp 1024w" sizes="(max-width: 1180px) 100vw, 42vw" alt="Монтажник несёт винтовую сваю" loading="lazy" width="1024" height="1536">
+      <div class="faq__photo-ui">
+        <h2 class="faq__title" data-split>Частые вопросы</h2>
+        <div>
+          <p>не нашли свой вопрос?<br>задайте его нам</p>
+          <div class="btn-pair">
+            <button class="btn btn--accent btn--sm" type="button" data-open-request="Вопрос"><span class="btn__label" data-text="Задать вопрос">Задать вопрос</span></button>
+            <a class="sq-btn sq-btn--light" href="tel:+73472997010" aria-label="Позвонить"><svg><use href="#i-phone"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="acc" data-acc>
+      <details class="acc__item" open>
+        <summary><span>Сколько стоит фундамент на&nbsp;винтовых сваях?</span><i></i></summary>
+        <div class="acc__body"><p>Зависит от&nbsp;количества, серии и&nbsp;длины свай, грунта и&nbsp;объёма монтажа. Пришлите параметры объекта&nbsp;— рассчитаем стоимость и&nbsp;сроки производства и&nbsp;монтажа.</p></div>
+      </details>
+      <details class="acc__item">
+        <summary><span>Чем ваши сваи отличаются от&nbsp;типовых?</span><i></i></summary>
+        <div class="acc__body"><p>Сваи изготавливаются из&nbsp;новой цельной трубы, а&nbsp;наконечник формируется из&nbsp;самой трубы&nbsp;— без&nbsp;отдельного сварного соединения. Производство серийное, на&nbsp;автоматизированном оборудовании.</p></div>
+      </details>
+      <details class="acc__item">
+        <summary><span>Монтируете ли вы&nbsp;сваи зимой?</span><i></i></summary>
+        <div class="acc__body"><p>Винтовые сваи монтируют и&nbsp;зимой: бетон не&nbsp;нужен, поэтому основанию не&nbsp;требуется тепло для&nbsp;набора прочности. Сроки и&nbsp;условия зимнего монтажа уточним при&nbsp;расчёте.</p></div>
+      </details>
+      <details class="acc__item">
+        <summary><span>Как подобрать диаметр и&nbsp;длину сваи?</span><i></i></summary>
+        <div class="acc__body"><p>Подбираем по&nbsp;нагрузкам объекта и&nbsp;условиям участка. Две серии&nbsp;— L и&nbsp;P, диаметры от&nbsp;57 до&nbsp;133&nbsp;мм, длина от&nbsp;1,5 до&nbsp;6&nbsp;м. Нестандартный проект&nbsp;— адаптируем сваю под&nbsp;его параметры.</p></div>
+      </details>
+      <details class="acc__item">
+        <summary><span>Как быстро вы&nbsp;приступаете к&nbsp;работам?</span><i></i></summary>
+        <div class="acc__body"><p>До&nbsp;начала монтажных работ&nbsp;— 24&nbsp;часа. Сваи производим сами, около 2,5&nbsp;минуты на&nbsp;одну, поэтому не&nbsp;ждём поставок со&nbsp;стороны.</p></div>
+      </details>
+      <details class="acc__item">
+        <summary><span>Где вы&nbsp;работаете?</span><i></i></summary>
+        <div class="acc__body"><p>Производство&nbsp;— в&nbsp;Уфе, монтаж&nbsp;— в&nbsp;Уфе и&nbsp;по&nbsp;всей Республике Башкортостан. Возможность поставки в&nbsp;другие регионы уточняйте у&nbsp;менеджера.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13. ЗАЯВКА ============ -->
+<section class="sec request" id="request" data-theme="light">
+  <div class="request__card">
+    <div class="request__left">
+      <h2 class="h2" data-split>Нужен расчёт по&nbsp;вашему объекту?</h2>
+      <div class="chat" data-chat>
+        <div class="chat__msg chat__msg--in" data-chat-msg><b>Иван</b><p>Здравствуйте! Строю пирс, не&nbsp;уверен, какие сваи подойдут. Поможете?</p></div>
+        <div class="chat__typing" data-chat-typing><i></i><i></i><i></i></div>
+        <div class="chat__msg chat__msg--out" data-chat-msg><b>Менеджер Свагросс</b><p>Добрый день, Иван! С&nbsp;радостью поможем. Подскажите, у&nbsp;вас уже готов чертёж?</p></div>
+      </div>
+    </div>
+    <div class="request__right">
+      <dl class="request__contacts">
+        <div><dt class="mono-cap">телефон</dt><dd><a href="tel:+73472997010">8 (347) 299-70-10</a></dd></div>
+        <div><dt class="mono-cap">почта</dt><dd><a href="mailto:info@svagross.ru">info@svagross.ru</a></dd></div>
+        <div><dt class="mono-cap">офис</dt><dd>Уфа, б-р Ибрагимова, 90/2, оф.&nbsp;13</dd></div>
+      </dl>
+      <p class="request__lead">Пришлите параметры проекта&nbsp;— подберём сваи, рассчитаем стоимость и&nbsp;сроки производства и&nbsp;монтажа.</p>
+      <form class="form" data-form novalidate>
+        <div class="form__row">
+          <label class="field"><span class="sr-only">Ваше имя</span><input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required></label>
+          <label class="field"><span class="sr-only">Телефон</span><input type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required data-phone></label>
+        </div>
+        <div class="btn-pair btn-pair--fill">
+          <button class="btn btn--accent" type="submit"><span class="btn__label" data-text="Получить расчёт и КП">Получить расчёт и&nbsp;КП</span><span class="btn__spinner"></span></button>
+          <label class="sq-btn sq-btn--muted sq-btn--file" aria-label="Прикрепить чертёж"><input type="file" class="sr-only" data-file><svg><use href="#i-clip"/></svg></label>
+        </div>
+        <p class="form__file" data-file-name></p>
+        <p class="form__consent">Нажимая кнопку, вы&nbsp;соглашаетесь с&nbsp;<a href="#" data-demo="Согласие на обработку персональных данных">обработкой персональных данных</a></p>
+        <div class="form__success" data-form-success tabindex="-1">
+          <span class="form__check"><svg><use href="#i-check"/></svg></span>
+          <p><b>Заявка принята</b><br>Это демо-макет: данные никуда не&nbsp;отправлены.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ftr" data-theme="dark">
+  <div class="ftr__stripes" aria-hidden="true"></div>
+  <div class="ftr__lines" aria-hidden="true"><span class="ftr__h"></span><span class="ftr__v"></span><span class="cross cross--lg"></span></div>
+  <div class="ftr__top">
+    <a class="ftr__logo" href="#top" data-scroll-to="#top" aria-label="Свагросс&nbsp;— наверх"><svg class="logo-full" viewBox="-1 103 2481 406" aria-hidden="true"><use href="#logo-full-path"/></svg></a>
+    <nav class="ftr__nav">
+      <p class="mono-cap mono-cap--light">меню</p>
+      <a href="#" data-demo="Каталог">каталог</a><a href="#" data-demo="Решения">решения</a><a href="#" data-demo="Производство">производство</a><a href="#" data-demo="Монтаж">монтаж</a><a href="#" data-demo="Проекты">проекты</a><a href="#" data-demo="О компании">о компании</a>
+    </nav>
+    <nav class="ftr__nav">
+      <p class="mono-cap mono-cap--light">каталог</p>
+      <a href="#" data-demo="Сваи серии L">сваи серии L</a><a href="#" data-demo="Сваи серии P">сваи серии P</a><a href="#" data-demo="Сваи под проект">сваи под проект</a><a href="#" data-demo="Монтаж свай">монтаж свай</a>
+    </nav>
+    <div class="ftr__depth">
+      <p class="mono-cap mono-cap--light">глубина</p>
+      <p class="ftr__depth-v">−6,00&nbsp;м</p>
+      <p class="ftr__depth-c">несущий слой достигнут</p>
+    </div>
+  </div>
+
+  <div class="ftr__bottom">
+    <div class="ftr__cell"><p class="mono-cap mono-cap--light">реквизиты</p><p>ООО «Глобал»<br>ИНН 0274149186</p></div>
+    <div class="ftr__cell"><p class="mono-cap mono-cap--light">телефон</p><p><a href="tel:+73472997010">8 (347) 299-70-10</a></p><p class="mono-cap mono-cap--light ftr__sub">почта</p><p><a href="mailto:info@svagross.ru">info@svagross.ru</a></p></div>
+    <div class="ftr__cell ftr__cell--up"><button class="ftr__up" type="button" data-scroll-to="#top" aria-label="Наверх"><svg><use href="#i-arrow-up"/></svg></button><p class="ftr__copy">© 2026 Свагросс<br>демо-макет главной</p></div>
+    <div class="ftr__cell"><p class="mono-cap mono-cap--light">офис</p><p>Уфа, бульвар Ибрагимова,<br>д.&nbsp;90/2, офис&nbsp;13</p><p class="mono-cap mono-cap--light ftr__sub">производство</p><p>Уфимский район, индустриальный парк «Нижегородский», ул.&nbsp;Предпринимателей, зд.&nbsp;30А</p></div>
+    <div class="ftr__cell ftr__cell--end"><p class="mono-cap mono-cap--light">мессенджеры</p><div class="ftr__soc"><a class="sq-btn sq-btn--light" href="https://t.me/svagross" target="_blank" rel="noopener" aria-label="Telegram"><svg><use href="#i-tg"/></svg></a><a class="sq-btn sq-btn--light" href="https://max.ru/u/f9LHodD0cOJuNwO8rBFikVJGxoPr4U1EDxGnqBN8IZfjpFsFxmiIf0uEkww" target="_blank" rel="noopener" aria-label="MAX"><svg><use href="#i-max"/></svg></a><a class="sq-btn sq-btn--light" href="mailto:info@svagross.ru" aria-label="Почта"><svg><use href="#i-mail"/></svg></a></div><p class="ftr__legal"><a href="#" data-demo="Политика конфиденциальности">политика конфиденциальности</a><br><a href="#" data-demo="Согласие на обработку персональных данных">согласие на обработку данных</a></p></div>
+  </div>
+</footer>
+
+<!-- ============ МОДАЛКИ ============ -->
+<div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="demoTitle" aria-hidden="true">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__card" data-lenis-prevent>
+    <button class="modal__x" type="button" data-close aria-label="Закрыть"><svg><use href="#i-close"/></svg></button>
+    <svg class="modal__mark" viewBox="0 0 100 100" aria-hidden="true"><use href="#logo-mark"/></svg>
+    <p class="mono-cap">демо-макет · раздел «<span data-demo-name>Каталог</span>»</p>
+    <h3 id="demoTitle">Пока доступна только главная страница</h3>
+    <p>Это демонстрационный макет. Каталог, решения, производство и&nbsp;другие разделы спроектируем на&nbsp;следующих этапах&nbsp;— в&nbsp;той же системе.</p>
+    <div class="btn-pair">
+      <button class="btn btn--accent" type="button" data-close data-autofocus><span class="btn__label" data-text="Вернуться на главную">Вернуться на главную</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="drawer" id="requestDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
+  <div class="drawer__backdrop" data-close></div>
+  <aside class="drawer__panel" data-lenis-prevent>
+    <button class="modal__x" type="button" data-close aria-label="Закрыть"><svg><use href="#i-close"/></svg></button>
+    <p class="mono-cap" data-drawer-eyebrow>заявка на расчёт</p>
+    <h3 id="drawerTitle" data-drawer-title>Рассчитаем сваи, стоимость и&nbsp;сроки</h3>
+    <form class="form form--drawer" data-form novalidate>
+      <p class="mono-cap">объект</p>
+      <div class="pills" data-pills>
+        <label><input type="radio" name="object" value="Дом" checked><span>дом</span></label>
+        <label><input type="radio" name="object" value="Баня / хозпостройка"><span>баня / хозблок</span></label>
+        <label><input type="radio" name="object" value="Забор / ворота"><span>забор</span></label>
+        <label><input type="radio" name="object" value="Пирс / мостки"><span>пирс</span></label>
+        <label><input type="radio" name="object" value="Терраса"><span>терраса</span></label>
+        <label><input type="radio" name="object" value="Коммерческий объект"><span>бизнес</span></label>
+      </div>
+      <label class="field"><span class="sr-only">Ваше имя</span><input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required data-autofocus></label>
+      <label class="field"><span class="sr-only">Телефон</span><input type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required data-phone></label>
+      <label class="field"><span class="sr-only">Комментарий</span><textarea name="comment" rows="3" placeholder="Размеры объекта, грунт, сроки&nbsp;— что знаете" data-comment></textarea></label>
+      <label class="file-drop"><input type="file" class="sr-only" data-file><svg><use href="#i-clip"/></svg><span data-file-name>прикрепить чертёж или фото участка</span></label>
+      <button class="btn btn--accent btn--block" type="submit"><span class="btn__label" data-text="Отправить заявку">Отправить заявку</span><span class="btn__spinner"></span></button>
+      <p class="form__consent">Нажимая кнопку, вы&nbsp;соглашаетесь с&nbsp;<a href="#" data-demo="Согласие на обработку персональных данных">обработкой персональных данных</a></p>
+      <div class="form__success" data-form-success tabindex="-1">
+        <span class="form__check"><svg><use href="#i-check"/></svg></span>
+        <p><b>Заявка принята</b><br>Это демо-макет: данные никуда не&nbsp;отправлены. В&nbsp;рабочей версии менеджер свяжется с&nbsp;вами в&nbsp;ближайшее время.</p>
+      </div>
+    </form>
+  </aside>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/vendor/gsap.min.js"></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendor/SplitText.min.js"></script>
+<script src="assets/js/vendor/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
