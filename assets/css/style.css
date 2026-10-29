@@ -1293,3 +1293,56 @@ input[type="range"]:active::-webkit-slider-thumb { transform: scale(1.2); }
 /* единицы в статистике завода — мелким кеглем, как в герое */
 .stats b small { margin-left: .22em; font-size: .4em; letter-spacing: 0; color: var(--on-dark-2); }
 @media (max-width: 720px) { .stats b { font-size: 32px; } .stats li { padding-right: 12px; } .stats li + li { padding-left: 12px; } }
+
+/* =========================================================
+   УПРОЩЕНИЕ ПО РЕФЕРЕНСАМ ЗАКАЗЧИКА (paalupiste.com)
+   прямые факты с галочками, спец-плашки серий, сцены без захвата скролла
+   ========================================================= */
+.tick { flex: none; display: inline-grid; place-items: center; width: 20px; height: 20px; background: var(--accent); color: #fff; }
+.tick svg { width: 14px; height: 14px; }
+
+/* герой: три факта с галочками и вторая кнопка — звонок */
+.hero__checks { grid-row: 3; align-self: end; display: grid; gap: 12px; margin-bottom: clamp(28px, 4.5vh, 52px); font-size: clamp(16px, .9rem + .35vw, 20px); line-height: 1.3; letter-spacing: -.01em; }
+.hero__checks li { display: flex; align-items: center; gap: 14px; }
+.btn--ghost { background: transparent; color: #fff; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .42); }
+.btn--ghost:hover { background: #fff; color: var(--ink); }
+.btn > svg { flex: none; width: 18px; height: 18px; }
+
+/* каталог: карточки серий со спец-плашкой и чек-листом */
+.catalog__links { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+.series-card { min-height: 0; }
+.series-card__top { align-items: flex-start; }
+.spec-box { display: grid; grid-template-columns: 1fr 1fr; margin: 18px 0 4px; background: var(--paper); border-left: 3px solid var(--accent); }
+.spec-box > div { padding: 12px 16px 14px; }
+.spec-box > div + div { border-left: 1px solid var(--line); }
+.spec-box dt { margin-bottom: 4px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.spec-box dd { font-size: clamp(20px, 1rem + .7vw, 26px); font-weight: 450; line-height: 1.1; letter-spacing: -.03em; }
+.checks { flex: 1; display: grid; align-content: start; margin: 8px 0 22px; }
+.checks li { display: flex; align-items: center; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 15px; line-height: 1.35; }
+.series-card--accent .checks { position: relative; flex: 0; }
+.series-card--accent .checks li { border-color: rgba(255, 255, 255, .3); }
+.series-card--accent .tick { background: #fff; color: var(--accent); }
+
+/* устройство сваи: обычный поток вместо закреплённой сцены */
+.pile { padding-bottom: var(--section-y); }
+.pile__stage { height: auto; min-height: 0; padding: clamp(16px, 3vw, 40px) 0 0; }
+.pile__drawing { height: min(76vh, 780px); }
+.pile__steps li { opacity: .55; outline-offset: -2px; }
+.pile__steps li:hover { opacity: 1; }
+
+/* фото-пауза: понятный блок про серию P */
+.pause { height: 86vh; min-height: 560px; }
+.pause__text { bottom: clamp(48px, 9vh, 110px); max-width: 760px; }
+.pause__title { max-width: 14ch; }
+.pause__lead { max-width: 40ch; font-size: var(--fs-lead-sm); line-height: 1.38; color: rgba(255, 255, 255, .85); }
+
+@media (max-width: 860px) {
+  .pile__steps li { opacity: 1; }
+}
+@media (max-width: 720px) {
+  .hero__checks { gap: 10px; margin-bottom: 24px; font-size: 16px; }
+  .hero .btn-pair { flex-wrap: wrap; }
+  .hero .btn-pair .btn { flex: 1 1 auto; }
+  .pause { height: 90vh; }
+  .pause__text { bottom: 40px; }
+}

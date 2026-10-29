@@ -704,35 +704,26 @@
 
     if (!HAS_GSAP || REDUCE) { staticMode(); return; }
 
-    const mm = gsap.matchMedia();
-    mm.add('(min-width: 1181px) and (min-height: 640px)', () => {
-      current = -1;
-      setStep(0);
-      setClock(0);
-      gsap.set(drawing, { clipPath: 'inset(0 0 100% 0)' });
-      gsap.set(dims, { autoAlpha: 0 });
-      gsap.timeline({ scrollTrigger: { trigger: stage, start: 'top 75%', once: true } })
-        .to(drawing, { clipPath: 'inset(0 0 0% 0)', duration: 1.6, ease: 'expo.inOut' })
-        .to(dims, { autoAlpha: 1, duration: .8, stagger: .15 }, '-=.6');
-      const st = ScrollTrigger.create({
-        trigger: stage, start: 'top top', end: '+=260%', pin: true, refreshPriority: 1,
-        onUpdate: self => {
-          const p = self.progress;
-          setStep(p < .25 ? 0 : p < .5 ? 1 : p < .72 ? 2 : 3);
-          setClock(clamp((p - .72) / .24, 0, 1));
-        },
-      });
-      ScrollTrigger.sort();
-      return () => st.kill();
-    });
-    mm.add('(max-width: 1180px), (max-height: 639px)', () => {
-      staticMode();
-      setClock(0);
-      ScrollTrigger.create({
-        trigger: stage, start: 'top 70%', once: true,
-        onEnter: () => { const o = { t: 0 }; gsap.to(o, { t: 1, duration: 2.4, ease: 'power2.inOut', onUpdate: () => setClock(o.t) }); },
-      });
-      ScrollTrigger.sort();
+    // без закрепления экрана: сцена сама проигрывается, когда доходишь до неё,
+    // а дальше детали подсвечиваются при наведении на пункт списка
+    const clockState = { t: 0 };
+    setStep(0);
+    setClock(0);
+    gsap.set(drawing, { clipPath: 'inset(0 0 100% 0)' });
+    gsap.set(dims, { autoAlpha: 0 });
+    const tl = gsap.timeline({ paused: true })
+      .to(drawing, { clipPath: 'inset(0 0 0% 0)', duration: 1.4, ease: 'expo.inOut' })
+      .to(dims, { autoAlpha: 1, duration: .6, stagger: .12 }, '-=.5')
+      .add(() => setStep(1), '+=.5')
+      .add(() => setStep(2), '+=.8')
+      .add(() => setStep(3), '+=.8')
+      .to(clockState, { t: 1, duration: 1.6, ease: 'power2.inOut', onUpdate: () => setClock(clockState.t) }, '<');
+    ScrollTrigger.create({ trigger: stage, start: 'top 72%', once: true, onEnter: () => tl.play() });
+    steps.forEach((li, i) => {
+      li.tabIndex = 0;
+      const pick = () => { if (tl.progress() < 1) tl.progress(1); setStep(i); };
+      li.addEventListener('mouseenter', pick);
+      li.addEventListener('focus', pick);
     });
   }
 
@@ -1074,7 +1065,7 @@
         rot: -(cards.length - 1) * STEP - STEP * .5,
         ease: 'none',
         onUpdate: apply,
-        scrollTrigger: { trigger: pin, start: 'top top', end: `+=${cards.length * 70}%`, pin: true, scrub: .8, refreshPriority: 1 },
+        scrollTrigger: { trigger: pin, start: 'top top', end: `+=${cards.length * 38}%`, pin: true, scrub: .8, refreshPriority: 1 },
       });
       gsap.from(['.dial__ticks', labelsBox], { autoAlpha: 0, duration: 1.4, scrollTrigger: { trigger: section, start: 'top 75%', once: true } });
       gsap.from(cards, { autoAlpha: 0, duration: 1, stagger: .08, scrollTrigger: { trigger: section, start: 'top 60%', once: true } });
